@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4828c915-6281-4861-b148-5e3c7e16da78" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Bank/exceptions/InsufficientFundsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Bank/exceptions/SameDestinyTransactionException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Bank/bank/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Bank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Bank/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Bank/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Bank/account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Bank/account/CheckingAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Bank/account/CheckingAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Bank/account/SavingAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Bank/account/SavingAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Bank/interfaces/IAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Bank/interfaces/IAccount.java" afterDir="false" />
-    </list>
+    <list default="true" id="4828c915-6281-4861-b148-5e3c7e16da78" name="Changes" comment="feat(console): Implement console interaction." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,13 +46,18 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/Bank" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -90,11 +83,34 @@
       <workItem from="1715106645478" duration="122000" />
       <workItem from="1715106788797" duration="1054000" />
       <workItem from="1715115755959" duration="53000" />
-      <workItem from="1715115881572" duration="333000" />
+      <workItem from="1715115881572" duration="1611000" />
+      <workItem from="1715117499574" duration="91000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(exceptions): Create some custom exception to handle business rules.">
+      <option name="closed" value="true" />
+      <created>1715116673920</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715116673920</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(console): Implement console interaction.">
+      <option name="closed" value="true" />
+      <created>1715116825070</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715116825070</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(exceptions): Create some custom exception to handle business rules." />
+    <MESSAGE value="feat(console): Implement console interaction." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(console): Implement console interaction." />
   </component>
 </project>

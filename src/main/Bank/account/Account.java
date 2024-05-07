@@ -6,7 +6,11 @@ import client.Client;
 import exceptions.InsufficientFundsException;
 import exceptions.SameDestinyTransactionException;
 import interfaces.IAccount;
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 public abstract class Account implements IAccount {
     protected static final int DEFAULT_AGENCY = 10;
     protected static int SEQUENCY = 1;
@@ -22,46 +26,6 @@ public abstract class Account implements IAccount {
         this.accountNumber = SEQUENCY++;
         this.balance = 200;
         this.client = client;
-        this.bank = bank;
-    }
-
-    public int getAgency() {
-        return agency;
-    }
-
-    public void setAgency(int agency) {
-        this.agency = agency;
-    }
-
-    public int getAccountNumber() {
-        return accountNumber;
-    }
-
-    public void setAccountNumber(int accountNumber) {
-        this.accountNumber = accountNumber;
-    }
-
-    public double getBalance() {
-        return balance;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
-
-    public Client getClient() {
-        return client;
-    }
-
-    public void setClient(Client client) {
-        this.client = client;
-    }
-
-    public Bank getBank() {
-        return bank;
-    }
-
-    public void setBank(Bank bank) {
         this.bank = bank;
     }
 

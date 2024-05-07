@@ -5,20 +5,16 @@ import client.Client;
 import exceptions.InsufficientFundsException;
 import exceptions.SameDestinyTransactionException;
 import interfaces.IAccount;
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 public class CheckingAccount extends Account{
     private double transactionTax;
     public CheckingAccount(Bank bank, Client client) {
         super(bank, client);
         this.transactionTax = 10.0;
-    }
-
-    public double getTransactionTax() {
-        return transactionTax;
-    }
-
-    public void setTransactionTax(double transactionTax) {
-        this.transactionTax = transactionTax;
     }
 
     @Override
