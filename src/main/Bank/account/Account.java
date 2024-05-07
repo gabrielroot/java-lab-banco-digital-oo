@@ -1,22 +1,36 @@
 package account;
 
+
+import bank.Bank;
 import client.Client;
+import exceptions.InsufficientFundsException;
+import exceptions.SameDestinyTransactionException;
 import interfaces.IAccount;
 
 public abstract class Account implements IAccount {
-    private static final int DEFAULT_AGENCY = 10;
-    private static int SEQUENCY = 1;
+    protected static final int DEFAULT_AGENCY = 10;
+    protected static int SEQUENCY = 1;
 
-    private int agency;
-    private int accountNumber;
-    private double balance;
-    private Client client;
+    protected int agency;
+    protected int accountNumber;
+    protected double balance;
+    protected Client client;
+    protected Bank bank;
 
-    public Account(Client client) {
+    public Account(Bank bank, Client client) {
         this.agency = DEFAULT_AGENCY;
         this.accountNumber = SEQUENCY++;
-        this.balance = 0;
+        this.balance = 200;
         this.client = client;
+        this.bank = bank;
+    }
+
+    public int getAgency() {
+        return agency;
+    }
+
+    public void setAgency(int agency) {
+        this.agency = agency;
     }
 
     public int getAccountNumber() {
@@ -43,12 +57,12 @@ public abstract class Account implements IAccount {
         this.client = client;
     }
 
-    public int getAgency() {
-        return agency;
+    public Bank getBank() {
+        return bank;
     }
 
-    public void setAgency(int agency) {
-        this.agency = agency;
+    public void setBank(Bank bank) {
+        this.bank = bank;
     }
 
     @Override
@@ -57,11 +71,17 @@ public abstract class Account implements IAccount {
             throw new InsufficientFundsException();
         }
 
+        this.balance -= value;
+        System.out.printf(
+            "Dedução de R$ -%.2f, restando R$ %.2f em conta.\n",
+            value,
+            this.balance
+        );
     }
 
     @Override
     public void deposit(double value) {
-
+        this.balance += value;
     }
 
     @Override

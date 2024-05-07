@@ -5,25 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4828c915-6281-4861-b148-5e3c7e16da78" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Bank/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Bank/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Bank/account/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Bank/account/CheckingAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Bank/account/SavingAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Bank/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Bank/interfaces/IAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Bank/exceptions/InsufficientFundsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Bank/exceptions/SameDestinyTransactionException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-lab-banco-digital-oo/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-lab-banco-digital-oo/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-lab-banco-digital-oo/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-lab-banco-digital-oo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-lab-banco-digital-oo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Bank/bank/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Bank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Bank/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Bank/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Bank/account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Bank/account/CheckingAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Bank/account/CheckingAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Bank/account/SavingAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Bank/account/SavingAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Bank/interfaces/IAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Bank/interfaces/IAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,23 +44,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/gabriel/dio/java_bootcamp/java-lab-banco-digital-oo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/gabriel/dio/java_bootcamp/java-lab-banco-digital-oo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -86,7 +82,15 @@
       <option name="presentableId" value="Default" />
       <updated>1715048821640</updated>
       <workItem from="1715048822725" duration="1000" />
-      <workItem from="1715049207563" duration="1771000" />
+      <workItem from="1715049207563" duration="2621000" />
+      <workItem from="1715090800793" duration="10731000" />
+      <workItem from="1715105335913" duration="893000" />
+      <workItem from="1715106243071" duration="307000" />
+      <workItem from="1715106564040" duration="69000" />
+      <workItem from="1715106645478" duration="122000" />
+      <workItem from="1715106788797" duration="1054000" />
+      <workItem from="1715115755959" duration="53000" />
+      <workItem from="1715115881572" duration="333000" />
     </task>
     <servers />
   </component>

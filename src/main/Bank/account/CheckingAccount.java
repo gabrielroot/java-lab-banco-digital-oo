@@ -1,6 +1,10 @@
 package account;
 
+import bank.Bank;
 import client.Client;
+import exceptions.InsufficientFundsException;
+import exceptions.SameDestinyTransactionException;
+import interfaces.IAccount;
 
 public class CheckingAccount extends Account{
     private double transactionTax;
@@ -54,6 +58,10 @@ public class CheckingAccount extends Account{
 
     @Override
     public void showExtract() {
-
+        System.out.println("- EXTRATO SIMPLIFICADO [CONTA CORRENTE] -");
+        System.out.printf("    > Banco = %s\n", this.bank.getName());
+        System.out.printf("    > Conta = %s\n", this.accountNumber);
+        System.out.printf("    > Agência = %s\n", this.agency);
+        System.out.printf("    > Saldo = %s\n", this.balance);
     }
 }
