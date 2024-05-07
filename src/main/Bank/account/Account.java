@@ -52,7 +52,10 @@ public abstract class Account implements IAccount {
     }
 
     @Override
-    public void withdraw(double value) {
+    public void withdraw(double value) throws InsufficientFundsException {
+        if (this.balance < value) {
+            throw new InsufficientFundsException();
+        }
 
     }
 
@@ -62,7 +65,21 @@ public abstract class Account implements IAccount {
     }
 
     @Override
-    public void transfer(double value, IAccount accountDestiny) {
+    public void transfer(double value, IAccount accountDestiny) throws InsufficientFundsException, SameDestinyTransactionException {
+        if (this.balance < value) {
+            throw new InsufficientFundsException();
+        }
 
+        if (this.equals(accountDestiny)) {
+            throw new SameDestinyTransactionException();
+        }
+
+        this.balance -= value;
+        accountDestiny.deposit(value);
+        System.out.printf(
+            "Transferência de R$ %.2f, restando R$ %.2f em conta.\n",
+            value,
+            this.balance
+        );
     }
 }
